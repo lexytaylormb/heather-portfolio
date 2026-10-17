@@ -1,0 +1,7 @@
+.vs/
+.idea/
+.vscode/
+_docx_tmp/
+~$*
+*.user
+*.suo

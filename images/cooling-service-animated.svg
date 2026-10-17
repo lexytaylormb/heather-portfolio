@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Animated cooling service illustration</title>
+  <desc id="desc">A technician beside an outdoor AC unit with animated fan blades and cool air streams.</desc>
+  <style>
+    :root {
+      --navy: #101820;
+      --blue: #0e5cad;
+      --cyan: #38c7e8;
+      --ice: #e7f8ff;
+      --white: #ffffff;
+      --line: #1f3347;
+      --orange: #f97316;
+    }
+
+    .float {
+      animation: float 5.2s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .fan {
+      animation: spin 2.2s linear infinite;
+      transform-origin: 546px 350px;
+    }
+
+    .air-stream {
+      fill: none;
+      stroke: var(--cyan);
+      stroke-width: 12;
+      stroke-linecap: round;
+      opacity: 0;
+      animation: breeze 2.4s ease-in-out infinite;
+    }
+
+    .air-stream.two {
+      animation-delay: 0.35s;
+    }
+
+    .air-stream.three {
+      animation-delay: 0.7s;
+    }
+
+    .snow {
+      animation: snow 2.8s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .snow.two {
+      animation-delay: 0.45s;
+    }
+
+    .snow.three {
+      animation-delay: 0.9s;
+    }
+
+    .gauge {
+      animation: gauge 2.6s ease-in-out infinite;
+      transform-origin: 282px 362px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes breeze {
+      0% { opacity: 0; transform: translateX(35px); }
+      35% { opacity: 0.85; }
+      100% { opacity: 0; transform: translateX(-55px); }
+    }
+
+    @keyframes snow {
+      0%, 100% { opacity: 0.35; transform: translateY(0) scale(0.88); }
+      50% { opacity: 1; transform: translateY(10px) scale(1.08); }
+    }
+
+    @keyframes gauge {
+      0%, 100% { transform: rotate(-9deg); }
+      50% { transform: rotate(12deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <rect width="900" height="620" rx="44" fill="#eefaff"/>
+  <circle cx="166" cy="143" r="105" fill="#d5f3ff"/>
+  <circle cx="734" cy="472" r="130" fill="#dff7ff"/>
+  <path d="M92 514h716" stroke="#bdddec" stroke-width="10" stroke-linecap="round"/>
+
+  <g class="float">
+    <path d="M148 248 450 80l302 168v236H148V248Z" fill="#ffffff" stroke="var(--line)" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M108 255 450 57l342 198" fill="none" stroke="var(--blue)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="222" y="306" width="130" height="178" rx="8" fill="#e7f8ff" stroke="var(--line)" stroke-width="10"/>
+    <rect x="562" y="294" width="126" height="96" rx="8" fill="#e7f8ff" stroke="var(--line)" stroke-width="10"/>
+    <path d="M584 322h82M584 354h82" stroke="#7ab8d4" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <path class="air-stream" d="M673 267c-58-18-88 20-142 2"/>
+  <path class="air-stream two" d="M700 320c-74-22-112 26-182 3"/>
+  <path class="air-stream three" d="M678 413c-61-18-91 24-149 4"/>
+
+  <g>
+    <rect x="424" y="254" width="246" height="228" rx="24" fill="var(--navy)" stroke="var(--line)" stroke-width="12"/>
+    <rect x="454" y="286" width="184" height="128" rx="18" fill="#e7f8ff" stroke="#41637d" stroke-width="8"/>
+    <g class="fan">
+      <circle cx="546" cy="350" r="24" fill="var(--blue)"/>
+      <path d="M546 347c-18-63 47-59 58-26-24 6-40 17-58 26Z" fill="var(--cyan)"/>
+      <path d="M551 353c63-17 59 48 26 58-6-24-17-40-26-58Z" fill="var(--cyan)"/>
+      <path d="M541 356c18 63-47 59-58 26 24-6 40-17 58-26Z" fill="var(--cyan)"/>
+      <path d="M538 346c-63 18-59-47-26-58 6 24 17 40 26 58Z" fill="var(--cyan)"/>
+      <circle cx="546" cy="350" r="10" fill="#ffffff"/>
+    </g>
+    <path d="M464 444h166" stroke="#6d91aa" stroke-width="10" stroke-linecap="round"/>
+    <path d="M484 462h126" stroke="#6d91aa" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(180 242)">
+    <circle cx="102" cy="72" r="45" fill="#ffd1ad" stroke="var(--line)" stroke-width="10"/>
+    <path d="M64 73c10-53 78-65 104-21-2-36-29-64-70-64-39 0-69 29-71 66 8 2 20 9 37 19Z" fill="var(--navy)"/>
+    <path d="M78 130h66c40 0 72 32 72 72v40H6v-40c0-40 32-72 72-72Z" fill="var(--blue)" stroke="var(--line)" stroke-width="10"/>
+    <path d="M151 163h58c24 0 44 20 44 44v30" fill="none" stroke="#ffd1ad" stroke-width="24" stroke-linecap="round"/>
+    <g>
+      <circle cx="252" cy="238" r="30" fill="#ffffff" stroke="var(--line)" stroke-width="9"/>
+      <path class="gauge" d="M252 238l17-17" stroke="var(--orange)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M232 238h40" stroke="#c8d7e4" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g class="snow" transform="translate(704 217)">
+    <path d="M0-22v44M-19-11l38 22M-19 11l38-22" stroke="var(--cyan)" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g class="snow two" transform="translate(352 180) scale(.82)">
+    <path d="M0-22v44M-19-11l38 22M-19 11l38-22" stroke="var(--cyan)" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g class="snow three" transform="translate(722 392) scale(.7)">
+    <path d="M0-22v44M-19-11l38 22M-19 11l38-22" stroke="var(--cyan)" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
