@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Coleman | Web Designer & Developer</title>
+    <meta
+        name="description"
+        content="Heather Coleman's portfolio featuring front-end development, design-focused work, and growing technical skills."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-text">Loading portfolio</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <div class="audio-prompt" id="audioPrompt" hidden aria-live="polite" aria-label="Intro song choice">
+        <div class="audio-prompt-card" role="dialog" aria-modal="true" aria-labelledby="audioPromptTitle" aria-describedby="audioPromptText">
+            <p class="audio-prompt-kicker">Welcome</p>
+            <h2 id="audioPromptTitle">Hear the intro song?</h2>
+            <p id="audioPromptText">Choose yes to play the introduction song one time, or no to skip it.</p>
+
+            <div class="audio-prompt-actions">
+                <button type="button" class="audio-prompt-button audio-prompt-button-yes" id="audioPromptYes">Yes, play it</button>
+                <button type="button" class="audio-prompt-button audio-prompt-button-no" id="audioPromptNo">No, thanks</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Go to home">HC</a>
+
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+                    <span class="theme-toggle-track"></span>
+                    <span class="theme-toggle-label theme-toggle-moon">Dark</span>
+                    <span class="theme-toggle-label theme-toggle-sun">Light</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        <section id="home" class="hero section-shell">
+            <div class="hero-bg"></div>
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+            <div class="hero-grid-lines"></div>
+            <div class="hero-spark hero-spark-one"></div>
+            <div class="hero-spark hero-spark-two"></div>
+            <div class="hero-spark hero-spark-three"></div>
+            <div class="hero-spark hero-spark-four"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">First portfolio, built with purpose</p>
+                <h1 class="hero-title">Heather Coleman</h1>
+                <h2 class="hero-subtitle">Design-minded developer creating polished, welcoming web experiences.</h2>
+                <p class="hero-description">
+                    I enjoy bringing ideas to life with thoughtful layout, responsive design, and front-end animation.
+                    This portfolio is the start of my journey and a place to show how I learn, build, and improve.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="projects.html" class="cta-button">See Projects</a>
+                    <a href="contact.html" class="secondary-button">Let's Connect</a>
+                </div>
+
+                <ul class="hero-highlights">
+                    <li>Responsive design</li>
+                    <li>GSAP animation</li>
+                    <li>Growing UI and UX skills</li>
+                </ul>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-wrap">
+                    <div class="hero-graphic-word">HEATHER</div>
+                    <div class="hero-orbit hero-orbit-one"></div>
+                    <div class="hero-orbit hero-orbit-two"></div>
+                    <div class="hero-orbit hero-orbit-three"></div>
+                    <div class="hero-orbit hero-orbit-four"></div>
+                    <img class="hero-img" src="images/cartoonGirl.PNG" alt="Illustrated portrait of Heather Coleman">
+                    <div class="hero-badge hero-badge-top">Open to Junior Roles</div>
+                    <div class="hero-badge hero-badge-bottom">Creative + Curious</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

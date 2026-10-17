@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Animated heating service illustration</title>
+  <desc id="desc">A technician servicing a home furnace with warm animated heat waves.</desc>
+  <style>
+    :root {
+      --navy: #101820;
+      --blue: #0e5cad;
+      --orange: #f97316;
+      --gold: #ffb84d;
+      --cream: #fff5e8;
+      --line: #1f3347;
+    }
+
+    .float {
+      animation: float 4.8s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .heat-wave {
+      fill: none;
+      stroke: var(--orange);
+      stroke-width: 12;
+      stroke-linecap: round;
+      opacity: 0;
+      animation: rise 2.7s ease-in-out infinite;
+    }
+
+    .heat-wave.two {
+      animation-delay: 0.45s;
+    }
+
+    .heat-wave.three {
+      animation-delay: 0.9s;
+    }
+
+    .flame-core {
+      animation: flame 1.7s ease-in-out infinite;
+      transform-origin: 515px 405px;
+    }
+
+    .spark {
+      animation: spark 2.2s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .spark.two {
+      animation-delay: 0.55s;
+    }
+
+    .spark.three {
+      animation-delay: 1.1s;
+    }
+
+    .wrench {
+      animation: wrench 2.8s ease-in-out infinite;
+      transform-origin: 320px 340px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes rise {
+      0% { opacity: 0; transform: translateY(18px) scale(0.92); }
+      30% { opacity: 0.82; }
+      100% { opacity: 0; transform: translateY(-48px) scale(1.06); }
+    }
+
+    @keyframes flame {
+      0%, 100% { transform: scale(1); opacity: 0.94; }
+      50% { transform: scale(1.08, 0.94); opacity: 1; }
+    }
+
+    @keyframes spark {
+      0%, 100% { opacity: 0.35; transform: translateY(0) scale(0.9); }
+      50% { opacity: 1; transform: translateY(-10px) scale(1.1); }
+    }
+
+    @keyframes wrench {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(7deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <rect width="900" height="620" rx="44" fill="#fff7ed"/>
+  <circle cx="705" cy="125" r="96" fill="#ffe0b8"/>
+  <circle cx="194" cy="488" r="132" fill="#ffe8cf"/>
+  <path d="M92 514h716" stroke="#e8cdb0" stroke-width="10" stroke-linecap="round"/>
+
+  <g class="float">
+    <path d="M145 248 450 78l305 170v236H145V248Z" fill="#ffffff" stroke="var(--line)" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M105 255 450 56l345 199" fill="none" stroke="var(--orange)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="218" y="310" width="126" height="174" rx="8" fill="#dfeaf5" stroke="var(--line)" stroke-width="10"/>
+    <rect x="555" y="302" width="132" height="96" rx="8" fill="#dfeaf5" stroke="var(--line)" stroke-width="10"/>
+    <path d="M575 331h92M575 363h92" stroke="#8aa9c4" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="404" y="302" width="210" height="172" rx="20" fill="var(--navy)" stroke="var(--line)" stroke-width="12"/>
+    <rect x="431" y="329" width="156" height="116" rx="14" fill="#1f3347"/>
+    <path class="heat-wave" d="M454 287c-24-30 27-42 1-77"/>
+    <path class="heat-wave two" d="M515 283c-24-34 28-45 3-84"/>
+    <path class="heat-wave three" d="M577 288c-24-30 27-42 1-77"/>
+    <path class="flame-core" d="M520 430c-42-18-54-60-22-94 5 30 37 35 24-25 55 39 68 98-2 119Z" fill="var(--orange)"/>
+    <path class="flame-core" d="M516 422c-23-15-25-42-4-62 4 19 24 22 19-12 30 28 28 59-15 74Z" fill="var(--gold)"/>
+  </g>
+
+  <g transform="translate(192 250)">
+    <circle cx="106" cy="73" r="46" fill="#ffd1ad" stroke="var(--line)" stroke-width="10"/>
+    <path d="M68 74c8-54 77-67 105-23-2-36-29-65-71-65-39 0-70 29-72 66 8 2 20 10 38 22Z" fill="var(--navy)"/>
+    <path d="M82 131h66c40 0 72 32 72 72v38H10v-38c0-40 32-72 72-72Z" fill="var(--blue)" stroke="var(--line)" stroke-width="10"/>
+    <path d="M150 164h70c30 0 54 24 54 54" fill="none" stroke="#ffd1ad" stroke-width="24" stroke-linecap="round"/>
+    <g class="wrench">
+      <path d="M252 202 332 282" stroke="var(--line)" stroke-width="18" stroke-linecap="round"/>
+      <path d="M326 269c22-7 39-29 39-54l-36 34-31-31 35-35c-26 0-49 17-56 41l49 45Z" fill="#c8d7e4" stroke="var(--line)" stroke-width="9" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <circle class="spark" cx="644" cy="286" r="9" fill="var(--gold)"/>
+  <circle class="spark two" cx="676" cy="360" r="7" fill="var(--orange)"/>
+  <circle class="spark three" cx="365" cy="234" r="8" fill="var(--gold)"/>
+</svg>
