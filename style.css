@@ -672,8 +672,7 @@ body[data-theme="light"] .secondary-button.is-selected {
   margin-top: 1.5rem;
 }
 
-.hero-highlights li,
-.project-tags span {
+.hero-highlights li {
   padding: 0.6rem 0.85rem;
   border-radius: 999px;
   border: 1px solid var(--border-color);
@@ -682,8 +681,7 @@ body[data-theme="light"] .secondary-button.is-selected {
   font-size: 0.92rem;
 }
 
-body[data-theme="light"] .hero-highlights li,
-body[data-theme="light"] .project-tags span {
+body[data-theme="light"] .hero-highlights li {
   background: rgba(255, 255, 255, 0.8);
   border-color: rgba(52, 26, 47, 0.14);
   color: var(--text-secondary);
@@ -910,7 +908,7 @@ body[data-theme="light"] .project-tags span {
 }
 
 .project-card .cta-button {
-  align-self: flex-start;
+  align-self: center;
   margin-top: auto;
   margin-bottom: 1.25rem;
 }
@@ -923,8 +921,12 @@ body[data-theme="light"] .project-tags span {
 
 .project-tags span {
   width: 100%;
+  padding: 0.2rem 0;
   justify-self: center;
   text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 .project-tags--three span:last-child {
